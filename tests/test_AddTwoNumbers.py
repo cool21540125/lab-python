@@ -1,4 +1,4 @@
-from leetcode.AddTwoNumbers import Solution, LinkedList
+from leetcode.AddTwoNumbers import Solution, ListNode
 import pytest
 
 
@@ -14,10 +14,31 @@ class TestAddTwoNumbers:
         ],
     )
     def test_AddTwoNumbers(self, list1, list2, target):
-        ln1 = LinkedList(list1)
-        ln2 = LinkedList(list2)
-        target_node = LinkedList(target).listnode
+        d1 = ListNode(0)
+        t1 = d1
+        for data in list1:
+            t1.next = ListNode(data)
+            t1 = t1.next
+
+        d2 = ListNode(0)
+        t2 = d2
+        for data in list2:
+            t2.next = ListNode(data)
+            t2 = t2.next
+
+        d0 = ListNode(0)
+        targetNode = d0
+        for data in target:
+            targetNode.next = ListNode(data)
+            targetNode = targetNode.next
+        targetNode = d0.next
 
         sol = Solution()
-        result = sol.addTwoNumbers(ln1.listnode, ln2.listnode)
-        assert result == target_node
+        result = sol.addTwoNumbers(d1.next, d2.next)
+        assert result.val == targetNode.val
+        while result.next:
+            result = result.next
+            targetNode = targetNode.next
+            assert result.val == targetNode.val
+        assert result.next is None
+        assert targetNode.next is None
