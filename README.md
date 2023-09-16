@@ -2,6 +2,6 @@
 # python 練功
 
 
-Qid  | Date   | Level  | note
----- | ------ | ------ | ---------------
-260  | 230914 | M      | Single Number III
+Qid  | Date   | Level  | File
+---- | ------ | ------ | --------------------
+260  | 230914 | M      | [SingleNumberIII](./leetcode/SingleNumberIII.py)
