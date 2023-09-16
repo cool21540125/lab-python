@@ -8,8 +8,7 @@ data4 = ([1, 1, 3, 3, 5, 6], [5, 6])
 data5 = ([-283, -174, 44, -174, 40, 40, 101, 101, 354, -283, 513, 513], [354, 44])
 
 
-class TestSolution:
-
+class TestSingleNumberIII:
     @pytest.mark.parametrize("nums, expected", [data1, data2, data3, data4, data5])
     def test_singleNumber(self, nums, expected):
         s = Solution()
