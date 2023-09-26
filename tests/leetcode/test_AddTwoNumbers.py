@@ -1,4 +1,4 @@
-from leetcode.AddTwoNumbers import Solution, ListNode
+from leetcode.AddTwoNumbers import Solution as AddTwoNumbers, ListNode
 import pytest
 
 
@@ -33,7 +33,7 @@ class TestAddTwoNumbers:
             targetNode = targetNode.next
         targetNode = d0.next
 
-        sol = Solution()
+        sol = AddTwoNumbers()
         result = sol.addTwoNumbers(d1.next, d2.next)
         assert result.val == targetNode.val
         while result.next:

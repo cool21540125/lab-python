@@ -1,4 +1,4 @@
-from leetcode.TwoSum import Solution
+from leetcode.TwoSum import Solution as TwoSum
 import pytest
 
 
@@ -15,6 +15,6 @@ class TestTwoSum:
         ],
     )
     def test_twoSum(self, nums, target, expected):
-        s = Solution()
+        s = TwoSum()
         result = s.twoSum(nums, target)
         assert result == expected

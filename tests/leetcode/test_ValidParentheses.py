@@ -1,4 +1,4 @@
-from leetcode.ValidParentheses import Solution
+from leetcode.ValidParentheses import Solution as ValidParentheses
 import pytest
 
 
@@ -18,6 +18,6 @@ class TestValidParentheses:
         ],
     )
     def test_isValid(self, s, expected):
-        sol = Solution()
+        sol = ValidParentheses()
         result = sol.isValid(s)
         assert result == expected

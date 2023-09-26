@@ -1,4 +1,4 @@
-from leetcode.SingleNumber import Solution
+from leetcode.SingleNumber import Solution as SingleNumber
 import pytest
 
 
@@ -7,6 +7,6 @@ class TestSingleNumber:
         "nums, expected", [([2, 2, 1], 1), ([4, 1, 2, 1, 2], 4), ([1], 1)]
     )
     def test_singleNumber(self, nums, expected):
-        s = Solution()
+        s = SingleNumber()
         result = s.singleNumber(nums)
         assert result == expected
