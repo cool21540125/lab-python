@@ -2,6 +2,7 @@ from leetcode.GasStation import Solution as GasStation
 import pytest
 
 
+# https://leetcode.com/problems/gas-station/
 class TestGasStation:
     @pytest.mark.parametrize(
         "gas, cost, expected",
@@ -16,4 +17,6 @@ class TestGasStation:
     def test_GasStation(self, gas, cost, expected):
         station = GasStation()
         result = station.canCompleteCircuit(gas, cost)
-        assert result == expected
+        assert (
+            result == expected
+        ), f"gas: {gas} & cost: {cost}, expected to be {expected}, but got {result}"

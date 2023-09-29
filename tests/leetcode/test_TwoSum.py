@@ -2,6 +2,7 @@ from leetcode.TwoSum import Solution as TwoSum
 import pytest
 
 
+# https://leetcode.com/problems/two-sum/
 class TestTwoSum:
     @pytest.mark.parametrize(
         "nums, target, expected",
@@ -17,4 +18,6 @@ class TestTwoSum:
     def test_twoSum(self, nums, target, expected):
         s = TwoSum()
         result = s.twoSum(nums, target)
-        assert result == expected
+        assert (
+            result == expected
+        ), f"nums: {nums} & target: {target}, expected to be {expected}, but got {result}"
