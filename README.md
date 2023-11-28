@@ -13,7 +13,7 @@ Qid  | Date       | Level  | Code                                               
 134  | 2023.09.29 | M      | [Gas Station](./leetcode/GasStation.py) | 
 3    | 2023.09.29 | M      | [LongestSubstringWithoutRepeatingCharacters](./leetcode/LongestSubstringWithoutRepeatingCharacters.py) | 
 211  | 2023.09.29 | M      | [Design Add and Search Words Data Structure](./leetcode/DesignAddandSearchWordsDataStructure.py) | dfs
-643  | 2023.11.29 | E      | [Maximum Average Subarray I](./leetcode/MaximumAverageSubarrayI.py) | 
+643  | 2023.11.29 | E      | [Maximum Average Subarray I](./leetcode/MaximumAverageSubarrayI.py) | slide window
 
 
 ## Algorithm
